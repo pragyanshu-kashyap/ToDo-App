@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, rgb(174, 121, 212), rgb(198, 150, 111));
+  color: transparent;
+  -webkit-background-clip: text;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.logo {
+  width: 100px;
+  margin-left: 40%;
+}
+
+.container #nhihorha {
+  text-align: center; /* Center the content */
+  flex: 1; /* Allow it to grow */
+  margin-right: auto; /* Push the logo to the center */
+}
+
+.language {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 40px;
+  margin-left: 38%;
+  align-items: center;
+  color: #000000;
+}
+.language {
+  margin-right: 20%;
+}
+
+#todo-input,
+#todo-date {
+  font-size: 15px;
+  padding: 10px 5px;
+}
+
+.btn-delete {
+  background-color: rgb(87, 4, 4);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0px;
+  cursor: pointer;
+}
+
+.btn-todo {
+  background-color: rgb(37, 158, 51);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0px;
+  cursor: pointer;
+}
+.butn {
+  padding: 0.4rem 1.4rem;
+}
+
+#btn1,
+#btn2 {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 0.4rem 0.4rem;
+  background-color: #55b86f;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 4px 8px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .logo {
+    margin-left: 0; /* Remove left margin */
+    margin-bottom: 1rem; /* Add bottom margin for spacing */
+  }
+
+  .language {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 1rem; /* Add bottom margin for spacing */
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column layout */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 20px; /* Adjust top margin */
+  }
+
+  #todo-input,
+  #todo-date {
+    width: 100%; /* Full width for inputs */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+
+  .btn-todo {
+    width: 100%; /* Full width for button */
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    width: 100%; /* Full width for buttons on small screens */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+}

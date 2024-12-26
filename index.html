@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="todo.css">
+  <title>Todo App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id="nhihorha">
+        <a href="#" class="logo"><h1>ToDO App</h1></a>
+      </div>
+      <div class="actions">
+        <div class="language">
+          <select>
+            <option value="en">English</option>
+            <option value="en">Hindi</option>
+          </select>
+        </div >
+        <div class="butn">
+          <a href="#" class="btn" id="btn2">Login</a>
+          <a href="#" class="btn" id="btn1">Register</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid-container">
+      <input id="todo-input" type="text" placeholder="Enter Todo here" required>
+      <input id="todo-date" type="date" required>
+      <button class='btn-todo' onclick="addTodo();">Add</button>
+    </div>
+
+    <div class="todo-container grid-container"></div>
+  </main>
+
+  <script src="todo.js"></script>
+</body>
+</html>
